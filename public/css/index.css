@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
-
 :root {
     --ff-playfair: 'Playfair Display', serif;
-    --ff-ptsans : 'PT Sans', sans-serif;
+    --ff-ptsans: 'PT Sans', sans-serif;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -17,11 +17,12 @@ a {
     text-decoration: none;
 }
 
-h3, p {
+h3,
+p {
     font-family: var(--ff-ptsans);
 }
 
-.subhead > p{
+.subhead>p {
     display: inline;
 }
 
@@ -33,7 +34,8 @@ h3, p {
 .clg-name {
     font-family: var(--ff-playfair);
 }
-.header > div{
+
+.header>div {
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -63,9 +65,9 @@ h3, p {
 }
 
 .footer-bg-blue {
-  margin: 1em 1em;
-  border-radius: 1rem 1rem;
-  background-color: #7CB9E8;
+    margin: 1em 1em;
+    border-radius: 1rem 1rem;
+    background-color: #7CB9E8;
 }
 
 .text-center {
@@ -92,7 +94,7 @@ ul {
 }
 
 .marquee--card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 1s;
     border-radius: 1rem;
     padding: 1.5rem;
@@ -137,12 +139,11 @@ h3 {
     h3 {
         font-size: 7vw;
     }
-
-    .header > div {
+    .header>div {
         flex-direction: column;
     }
-    
-    h1, h2 {
+    h1,
+    h2 {
         color: white;
     }
 }
@@ -151,62 +152,51 @@ h3 {
     h3 {
         font-size: 5vw;
     }
-
-    .navbar-nav > li{
+    .navbar-nav>li {
         margin: 0;
     }
-
-    .header > div {
+    .header>div {
         flex-direction: column;
     }
-
-    h1, h2 {
+    h1,
+    h2 {
         color: white;
     }
 }
 
 @media (min-width: 800px) {
-
     h3 {
         font-size: 2vw;
     }
-
     h1 {
         font-size: 2.5rem;
     }
-
     h2 {
         font-size: 2rem;
     }
-
-    h1, h2 {
+    h1,
+    h2 {
         color: white;
     }
-
     * {
         margin: 0;
     }
-
     .header:nth-of-type(1) {
         background-image: url(../images/primary_background.jpeg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
     }
-   
     .text-center {
         text-align: center;
     }
-
     .split {
         flex-direction: row;
     }
-
-    .split > * {
+    .split>* {
         flex-basis: 100%;
     }
-
-    .split > * + * {
+    .split>*+* {
         margin-left: 3rem;
     }
 }
@@ -227,7 +217,6 @@ footer {
     padding: 1rem 1rem;
 }
 
-
 .h3-block::before {
     margin-right: 5px;
     display: inline;
@@ -238,204 +227,223 @@ footer {
     color: yellow;
 }
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  font-family: var(--ff-ptsans);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: var(--ff-ptsans);
 }
-.wrapper{
-  background: #7CB9E8;
-  position: fixed;
-  width: 98%;
-  margin: 0.5% 1%;
-  border-radius: 10px;
-  z-index: 10;
+
+.wrapper {
+    background: #6fb3e7;
+    position: fixed;
+    width: 98%;
+    margin: 0.5% 1%;
+    border-radius: 10px;
+    z-index: 10;
 }
-.wrapper nav{
-  position: relative;
-  display: flex;
-  margin: 0 3%;
-  height: 70px;
-  align-items: center;
-  justify-content: space-between;
+
+.wrapper nav {
+    position: relative;
+    display: flex;
+    margin: 0 3%;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
 }
-nav .content{
-  display: flex;
-  align-items: center;
-  flex:1;
+
+nav .content {
+    display: flex;
+    align-items: center;
+    flex: 1;
 }
-nav .content .links{
-  display: flex;
-  flex: 1;
-  justify-content: space-between;
+
+nav .content .links {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
 }
-.content .logo a{
-  color: #fff;
-  font-size: 30px;
-  font-weight: 600;
+
+.content .logo a {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
 }
-.content .links li{
-  list-style: none;
-  line-height: 70px;
-  padding-left: 0%;
+
+.content .links li {
+    list-style: none;
+    line-height: 70px;
+    padding-left: 0%;
 }
+
 .content .links li a,
-.content .links li label{
-  color: #fff;
-  font-size: 18px;
-  font-weight: 500;
-  padding: 9px 17px;
-  transition: all 0.3s ease;
-  border-radius: 10px;
+.content .links li label {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 9px 17px;
+    transition: all 0.3s ease;
+    border-radius: 10px;
 }
-.content .links li label{
-  display: none;
+
+.content .links li label {
+    display: none;
 }
+
 .content .links li a:hover,
-.content .links li label:hover{
-  background: #323c4e;
-  color: #7CB9E8;
+.content .links li label:hover {
+    background: #323c4e;
+    color: #7CB9E8;
 }
 
-.wrapper .menu-icon{
-  color: #fff;
-  font-size: 18px;
-  cursor: pointer;
-  line-height: 70px;
-  width: 70px;
-  text-align: center;
-}
-.wrapper .menu-icon{
-  display: none;
+.wrapper .menu-icon {
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    line-height: 70px;
+    width: 70px;
+    text-align: center;
 }
 
-.wrapper input[type="checkbox"]{
-  display: none;
+.wrapper .menu-icon {
+    display: none;
 }
+
+.wrapper input[type="checkbox"] {
+    display: none;
+}
+
 
 /* Dropdown Menu code start */
-.content .links ul{
-  position: absolute;
-  background: #7CB9E8;
-  top: 80px;
-  z-index: -1;
-  opacity: 0;
-  visibility: hidden;
-}
-.content .links li:hover > ul{
-  top: 70px;
-  opacity: 1;
-  visibility: visible;
-  transition: all 0.3s ease;
-}
-.content .links ul li a{
-  display: block;
-  width: 100%;
-  line-height: 30px;
-  border-radius: 0px!important;
-}
-.content .links ul ul{
-  position: absolute;
-  top: 0;
-  left: 100%;
-}
-.content .links ul li{
-  position: relative;
-}
-.content .links ul li:hover ul{
-  top: 0;
+
+.content .links ul {
+    position: absolute;
+    background: #7CB9E8;
+    top: 80px;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
 }
 
-@media screen and (max-width: 1200px){
-    .wrapper nav{
+.content .links li:hover>ul {
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease;
+}
+
+.content .links ul li a {
+    display: block;
+    width: 100%;
+    line-height: 30px;
+    border-radius: 0px!important;
+}
+
+.content .links ul ul {
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.content .links ul li {
+    position: relative;
+}
+
+.content .links ul li:hover ul {
+    top: 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .wrapper nav {
         max-width: 100%;
         padding: 0 20px;
     }
-    nav .content .links{
-    margin-left: 30px;
+    nav .content .links {
+        margin-left: 30px;
     }
-    .content .links li a{
-    padding: 8px 13px;
+    .content .links li a {
+        padding: 8px 13px;
     }
-  .wrapper .menu-icon{
-    display: block;
-  }
-
-  nav .content {
-    flex-direction: row-reverse;
-  }
-
-  .wrapper #show-menu:checked ~ .menu-icon i::before{
-    content: "\f00d";
-  }
-  nav .content .links{
-    display: block;
-    position: fixed;
-    background: #14181f;
-    height: 100%;
-    width: 100%;
-    top: 70px;
-    left: -100%;
-    margin-left: 0;
-    max-width: 350px;
-    overflow-y: auto;
-    padding-bottom: 100px;
-    transition: all 0.3s ease;
-  }
-  nav #show-menu:checked ~ .content .links{
-    left: 1%;
-  }
-  .content .links li{
-    margin: 15px 20px;
-  }
-  .content .links li a,
-  .content .links li label{
-    line-height: 40px;
-    font-size: 20px;
-    display: block;
-    padding: 8px 18px;
-    cursor: pointer;
-  }
-  .content .links li a.desktop-link{
-    display: none;
-  }
-
-  /* dropdown responsive code start */
-  .content .links ul,
-  .content .links ul ul{
-    position: static;
-    opacity: 1;
-    visibility: visible;
-    background: none;
-    max-height: 0px;
-    overflow: hidden;
-  }
-  .content .links #show-features:checked ~ ul,
-  .content .links #show-services:checked ~ ul,
-  .content .links #show-items:checked ~ ul{
-    max-height: 100vh;
-  }
-  .content .links ul li{
-    margin: 7px 20px;
-  }
-  .content .links ul li a{
-    font-size: 18px;
-    line-height: 30px;
-    border-radius: 5px!important;
-  }
+    .wrapper .menu-icon {
+        display: block;
+    }
+    nav .content {
+        flex-direction: row-reverse;
+    }
+    .wrapper #show-menu:checked~.menu-icon i::before {
+        content: "\f00d";
+    }
+    nav .content .links {
+        display: block;
+        position: fixed;
+        background: #14181f;
+        height: 100%;
+        width: 100%;
+        top: 70px;
+        left: -100%;
+        margin-left: 0;
+        max-width: 350px;
+        overflow-y: auto;
+        padding-bottom: 100px;
+        transition: all 0.3s ease;
+    }
+    nav #show-menu:checked~.content .links {
+        left: 1%;
+    }
+    .content .links li {
+        margin: 15px 20px;
+    }
+    .content .links li a,
+    .content .links li label {
+        line-height: 40px;
+        font-size: 20px;
+        display: block;
+        padding: 8px 18px;
+        cursor: pointer;
+    }
+    .content .links li a.desktop-link {
+        display: none;
+    }
+    /* dropdown responsive code start */
+    .content .links ul,
+    .content .links ul ul {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        background: none;
+        max-height: 0px;
+        overflow: hidden;
+    }
+    .content .links #show-features:checked~ul,
+    .content .links #show-services:checked~ul,
+    .content .links #show-items:checked~ul {
+        max-height: 100vh;
+    }
+    .content .links ul li {
+        margin: 7px 20px;
+    }
+    .content .links ul li a {
+        font-size: 18px;
+        line-height: 30px;
+        border-radius: 5px!important;
+    }
+    .content .links #show-features:checked~ul,
+    .content .links #show-services-2:checked~ul,
+    .content .links #show-items-2:checked~ul {
+        max-height: 100vh;
+    }
 }
 
-@media screen and (max-width: 400px){
-  .wrapper nav{
-    padding: 0 10px;
-  }
-  .content .logo a{
-    font-size: 27px;
-  }
+@media screen and (max-width: 400px) {
+    .wrapper nav {
+        padding: 0 10px;
+    }
+    .content .logo a {
+        font-size: 27px;
+    }
 }
 
-.links > li {
+.links>li {
     margin-left: 50px;
 }

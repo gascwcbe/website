@@ -1,168 +1,176 @@
-html
-{
+html {
     scroll-behavior: smooth;
 }
-#main-div 
-{
-    padding:3% 5%;
+
+#main-div {
+    padding: 3% 5%;
 }
 
-.navBar-link:hover{
+.navBar-link:hover {
     text-decoration: none;
 }
 
-#nav-list
-{
+#nav-list {
     width: 100%;
-    margin:0;
+    margin: 0;
     padding: 0;
 }
 
-#nav-elem,#nav-elem-1,#nav-elem-2,#nav-elem-3,#nav-elem-4,#nav-elem-5,#nav-elem-6,#nav-elem-7
-{
+#nav-elem,
+#nav-elem-1,
+#nav-elem-2,
+#nav-elem-3,
+#nav-elem-4,
+#nav-elem-5,
+#nav-elem-6,
+#nav-elem-7 {
     display: inline-block;
     margin-right: 0.5%;
     padding-right: 3%;
 }
 
-#navBar 
-{
-    display:flex;
+#navBar {
+    display: flex;
     align-items: center;
     font-size: large;
-
     justify-content: space-around;
 }
 
-.navBar-elem 
-{
+.navBar-elem {
     color: black;
     font-weight: 600;
-    
 }
 
-.nav-line 
-{
-    border:none;
+.nav-line {
+    border: none;
     border-bottom: 2px solid black;
     margin-left: 2%;
     margin-right: 1%;
 }
 
-#Department 
-{
+#Department {
     margin-top: 4%;
     margin-left: 1.5%;
-    display:flex;
+    display: flex;
     align-items: center;
 }
 
-.border-large 
-{
+.border-large {
     border-left: 5px solid yellow;
     height: 70px;
 }
-.border-small
-{
+
+.border-small {
     border-left: 5px solid yellow;
     height: 40px;
 }
 
-.Dep_name{
+.Dep_name {
     font-size: large;
     margin-left: 3%;
 }
 
-#about-department-name,#mission-department-name,#vision-department-name,#facility-department-name,#faculty-department-name,#RD-department-name
-{
+#about-department-name,
+#mission-department-name,
+#vision-department-name,
+#facility-department-name,
+#faculty-department-name,
+#RD-department-name {
     margin-top: 4%;
     margin-left: 1.5%;
-    display:flex;
+    display: flex;
     align-items: center;
 }
 
-th{
-    background-color: #2E5984 !important;
+th {
+    background-color: #7CB9E8 !important;
+    color: black !important;
+    border: none !important;
 }
 
 .btn-primary {
-    background-color: #2E5984 !important;
+    background-color: #7CB9E8 !important;
     border: none;
+}
+
+.btn-primary a {
+    color: black !important;
 }
 
 .scroll-table {
     overflow-x: scroll !important;
 }
 
-.about-department-title,.vision-department-title,.facility-department-title,.faculty-department-title,.RD-department-title
-{
+.about-department-title,
+.vision-department-title,
+.facility-department-title,
+.faculty-department-title,
+.RD-department-title {
     font-size: medium;
-    margin-top:5px;
+    margin-top: 5px;
     margin-left: 3%;
 }
 
-.about-content,.mission-content,.vision-content
-{
+.about-content,
+.mission-content,
+.vision-content {
     margin-top: 1.5%;
 }
 
-.about-col-content ,.mission-col-content,.vision-col-content
-{
+.about-col-content,
+.mission-col-content,
+.vision-col-content {
     margin-left: 4%;
     display: flex;
     text-align: justify;
 }
 
-.mission-department-title
-{
-    
+.mission-department-title {
     font-size: medium;
-    margin-top:3px;
+    margin-top: 3px;
     margin-right: 1%;
 }
-.facility-col-content,.faculty-col-content,.RD-col-content
-{
-   margin-left:3%;
-   margin-top: 1%;
+
+.facility-col-content,
+.faculty-col-content,
+.RD-col-content {
+    margin-left: 3%;
+    margin-top: 1%;
 }
 
-.card-align
-{
-    padding-left:3%;
-}
-.card-margin 
-{
-  margin-top: 10px;
-  margin-bottom: 10px;
+.card-align {
+    padding-left: 3%;
 }
 
-.footer-main
-{
-    margin-left:2%;
-    margin-right:2%;
+.card-margin {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
-.custom-footer
-{
+
+.footer-main {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.custom-footer {
     background-color: cornflowerblue;
 }
 
-.footer-details
-{
-    padding:0.7%;
+.footer-details {
+    padding: 0.7%;
     text-align: center;
 }
-.footer-content 
-{
+
+.footer-content {
     margin-top: 1%;
     text-align: center;
-    color:black;
+    color: black;
     font-weight: 500;
 }
 
-.Scroller
-{
+.Scroller {
     border-radius: 50%;
-    position:fixed;
+    position: fixed;
     right: 20px;
     bottom: 20px;
     height: 2rem;
@@ -172,18 +180,16 @@ th{
     text-align: center;
 }
 
-.Scroller-elem
-{
+.Scroller-elem {
     color: white;
-    margin-top:0.3rem;
+    margin-top: 0.3rem;
     text-align: center;
     font-weight: bolder;
     font-size: 1.35rem;
 }
 
-.Scroller-elem:hover
-{
-    color:white;
+.Scroller-elem:hover {
+    color: white;
     text-decoration: none;
 }
 
@@ -198,15 +204,17 @@ a:hover {
 }
 
 @media screen and (min-width:1000px) {
-
-    .about-department-title,.vision-department-title,.facility-department-title,.faculty-department-title,.RD-department-title, .Dep_name
-    {
+    .about-department-title,
+    .vision-department-title,
+    .facility-department-title,
+    .faculty-department-title,
+    .RD-department-title,
+    .Dep_name {
         font-size: medium;
-        margin-top:5px;
+        margin-top: 5px;
         margin-left: 1.5%;
     }
-
-} 
+}
 
 footer {
     display: flex;
@@ -224,7 +232,6 @@ footer {
     padding: 1rem 1rem;
 }
 
-
 .footer--text {
     text-align: center;
 }
@@ -233,9 +240,9 @@ footer {
     margin: 1em 1em;
     border-radius: 1rem 1rem;
     background-color: #7CB9E8;
-  }
+}
 
-  .text-center {
+.text-center {
     text-align: center;
 }
 
@@ -248,12 +255,34 @@ footer {
     .split {
         flex-direction: row;
     }
-
-    .split > * {
+    .split>* {
         flex-basis: 100%;
     }
-
-    .split > * + * {
+    .split>*+* {
         margin-left: 3rem;
     }
+}
+
+footer {
+    margin-top: 2em;
+}
+
+body::-webkit-scrollbar {
+    width: 4px;
+}
+
+.scroll-table::-webkit-scrollbar {
+    width: 2px;
+    height: 4px;
+}
+
+body::-webkit-scrollbar-track,
+.scroll-table::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+body::-webkit-scrollbar-thumb,
+.scroll-table::-webkit-scrollbar-thumb {
+    background: #bec2c5;
+    border-radius: 20px;
 }
